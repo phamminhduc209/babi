@@ -33,6 +33,15 @@
     }, 'slow');
   });
 
+  /*[ hover dropdown ]
+  - - - - - - - - - - - - - - - - - - - - */
+  $('.customer-setting, .minicart-wrapper').hover(function() {
+    $(this).addClass('open');
+  },
+  function() {
+    $(this).removeClass('open');
+  });
+
   /*  [ Sticky Menu ] */
   // $('.fixed-header').sticky({ topSpacing: 0 });
 

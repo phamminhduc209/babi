@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vn">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,44 +27,158 @@
 	<![endif]-->
 </head>
 <body>
-	
-	<header id="header" class="header">
-		<div class="container">
-			<div class="row">
-				<div class="header-top">
-					<div class="block-nav-mobile">
-						
-					</div><!-- /block-nav-mobile -->
-					<div class="logo">
-						<img src="images/logo-babi.png" alt="Logo">
-					</div><!-- /logo -->
-					<div class="block-search">
-						
-					</div><!-- /block-search -->
-					<div class="btn-group block-resgister" role="group" aria-label="...">
-						<div class="btn-group" role="group">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Dropdown
-								<span class="caret"></span>
+
+	<div class="wrapper">
+
+		<header id="header" class="header">
+			<div class="header-top clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="block-nav-mobile">
+							<a href="#" class="mobile-menu">
+							    <i class="fa fa-bars"></i>
 							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Dropdown link</a></li>
-								<li><a href="#">Dropdown link</a></li>
-							</ul>
-						</div>
-					</div><!-- /block-resgister -->
-					<div class="block-cart">
-						
-					</div><!-- /block-cart -->
-				</div><!-- /header-top -->
-				<div class="header-main">
-					<nav class="">
-						
-					</nav>
+						</div><!-- /block-nav-mobile -->
+						<div class="block-logo">
+							<img src="images/logo-babi.png" alt="Logo">
+						</div><!-- /logo -->
+						<div class="block-search">
+							<form action="#" method="POST" class="search-heder-top">
+								<input type="text" name="" value="" title="Tìm kiếm sản phẩm" class="search_input" autocomplete="off" placeholder="Tìm kiếm sản phẩm">
+								<button title="Tìm kiếm" class="btn_search" type="submit"><i class="fa fa-search"></i></button>
+								<div class="quick-search-result">
+						            <div class="tt-dataset tt-dataset-0">
+						                <h3 class="tt-dataset-heading">Sản phẩm khách thường tìm</h3>
+						                <div class="tt-suggestion tt-selectable">đầm bé gái</div>
+						                <div class="tt-suggestion tt-selectable">đồ bộ bé trai</div>
+						                <div class="tt-suggestion tt-selectable">đồ bộ bé gái</div>
+						                <div class="tt-suggestion tt-selectable">áo thun bé trai</div>
+						            </div>
+						        </div>
+							</form>
+						</div><!-- /block-search -->
+						<div class="minicart-wrapper dropdown">
+		                    <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+		                    	<i class="fa fa-shopping-cart"></i>
+		                    	<span>Giỏ hàng</span>
+		                    </a>
+		                    <div class="block-minicart dropdown-menu dropdown-menu-right">
+		                    	<div id="minicart-content-wrapper">
+		                    		<div class="minicart-items-wrapper">
+		                    			<ol class="minicart-items">
+		                    				<li class="product-item">
+		                    					<a class="product-item-photo" href="#" title="The Name Product">
+		                                            <!-- <img class="product-image-photo" src="images/media/minicart.jpg" alt="The Name Product"> -->
+		                                        </a>
+												<div class="product-item-details">
+		                                            <strong class="product-item-name">
+		                                                <a href="#">The Name Product</a>
+		                                            </strong>
+		                                            <div class="product-reviews-summary">
+		                                                <div class="rating-summary">
+		                                                    <div class="rating-result" title="70%">
+		                                                        <span style="width:70%">
+		                                                            <span><span>70</span>% of <span>100</span></span>
+		                                                        </span>
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                            <div class="product-item-pricing">
+		                                                <span class="price-qty">1</span>
+		                                                <span class="price">$200.00</span>
+		                                            </div>
+		                                            <div class="actions">
+		                                                <a class="action delete" href="#"  title="Remove item">
+		                                                    <span >Remove</span>
+		                                                </a>
+		                                            </div>
+		                                        </div>
+
+		                    				</li>
+		                    			</ol>
+		                    		</div>
+		                    	</div>
+		                    </div>
+		                </div><!-- /block-cart -->
+						<div class="customer-setting dropdown">
+							<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">Tài khoản</a>
+							<div class="dropdown-menu dropdown-menu-right"></div>
+						</div><!-- /block-resgister -->
+					</div>
 				</div>
+			</div><!-- /header-top -->
+			<div class="header-main">
+				<nav id="mainNav" class="navbar navbar-default navbar-custom nav-top-menu1 mid-header">
+			        <div class="container" id="main-menu">
+			        	<!-- Brand and toggle get grouped for better mobile display -->
+				        <div class="navbar-header">
+				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				              <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+				            </button>	
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu menu-white" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-left">
+								<li class="level0 parent">
+									<a class="" href="#">Quần Áo Bé Trai</a>
+									<ul class="level0 submenu submenu-bacground">
+										<li class="level1"><a href="#">Áo sơ mi bé trai</a></li>
+	                                    <li class="level1"><a href="#">Áo thun bé trai</a></li>
+	                                    <li class="level1"><a href="#">Áo khoác bé trai</a></li>
+	                                    <li class="level1"><a href="#">Quần kiểu bé trai</a></li>
+	                                    <li class="level1"><a href="#">Quần jeans bé trai</a></li>
+	                                    <li class="level1"><a href="#">Đồ bộ bé trai</a></li>
+	                                    <li class="level1"><a href="#">Đồ bơi bé trai</a></li>
+	                                    <li class="level1"><a href="#">Quần lót bé trai</a></li>
+	                                    <li class="level1"><a href="#">Giày dép bé trai</a></li>
+	                                    <li class="level1"><a href="#">Phụ kiện bé trai</a></li>
+									</ul>
+								</li>
+								<li class="level0 parent">
+									<a class="" href="#">Quần Áo Bé Gái</a>
+									<ul class="level0 submenu submenu-bacground">
+										<li class="level1"><a href="#">Váy Đầm Công Chúa</a></li>
+	                                    <li class="level1"><a href="#">Váy Đầm Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Áo Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Áo Khoác Bé Trai</a></li>
+	                                    <li class="level1"><a href="#">Quần Trẻ Em Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Đồ Bộ Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Đồ Bơi Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Quần Lót Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Giày Dép Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Phụ Kiện Bé Gái</a></li>
+									</ul>
+								</li>
+								<li class="level0 parent">
+									<a class="" href="#">Quấn Áo Sơ Sinh</a>
+									<ul class="level0 submenu submenu-bacground">
+										<li class="level1"><a href="#">Phụ Kiện Sơ Sinh Cho Bé</a></li>
+	                                    <li class="level1"><a href="#">Quần Áo Sơ Sinh Cho Bé Trai</a></li>
+	                                    <li class="level1"><a href="#">Quần Áo Sơ Sinh Cho Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Đồ Sơ Sinh Trọn Gói</a></li>
+	                                    <li class="level1"><a href="#">Giày Sơ Sinh</a></li>
+									</ul>
+								</li>
+								<li>
+									<a class="" href="#">Đồ Dùng Mới Về</a>
+									<ul class="level0 submenu submenu-bacground">
+										<li class="level1"><a href="#">Phụ Kiện Sơ Sinh Cho Bé</a></li>
+	                                    <li class="level1"><a href="#">Quần Áo Sơ Sinh Cho Bé Trai</a></li>
+	                                    <li class="level1"><a href="#">Quần Áo Sơ Sinh Cho Bé Gái</a></li>
+	                                    <li class="level1"><a href="#">Đồ Sơ Sinh Trọn Gói</a></li>
+	                                    <li class="level1"><a href="#">Giày Sơ Sinh</a></li>
+									</ul>
+								</li>
+								<li><a class="" href="#">Hoàng Mới Về</a></li>
+								<li><a class="" href="#">Đồ Cho Mẹ</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+			        </div>
+		    	</nav><!-- END NAVIGATION -->
 			</div>
-		</div>
-	</header><!-- /header -->
+		</header><!-- /header -->
+	</div><!-- /wrapper -->
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
