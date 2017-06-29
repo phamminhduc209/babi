@@ -233,7 +233,7 @@ img {
 }
 
 /* Menu */
-.nav-top-menu1 {
+.navbar-custom {
   position: relative;
   border: none;
   border-bottom: 1px solid #d7d7d7;
@@ -257,12 +257,21 @@ img {
   background: transparent;
 }
 .menu .navbar-nav .submenu {
-  
+  min-width: 200px;
+  min-height: 200px;
+  padding: 15px 110px 50px 15px;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  overflow: hidden;
   -webkit-transform: translate(0, 10px);
   -ms-transform: translate(0, 10px);
   -o-transform: translate(0, 10px);
   transform: translate(0, 10px);
-  min-height: 200px;
 }
 .menu .navbar-nav li:hover > .submenu {
   visibility: visible;
@@ -275,7 +284,7 @@ img {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.menu .navbar-nav .submenu li {
+.menu .navbar-nav .submenu > li {
   display: block;
   position: relative;
   text-transform: capitalize;
@@ -284,20 +293,33 @@ img {
 }
 .menu .navbar-nav .submenu li a {
   color: #465363;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  font: inherit;
-  cursor: pointer;
-  border-bottom: 0;
-  -webkit-transition: all 150ms;
-  -moz-transition: all 150ms;
-  -o-transition: all 150ms;
-  transition: all 150ms;
+  font-size: 12px;
+}
+.navbar-custom .navbar-nav>li>a:focus, .navbar-custom .navbar-nav>li>a:hover {
+  color: #fff;
+}
+.submenu_boy.submenu-bacground {
+  background: url(../images/menu/boy.png) no-repeat 141px bottom #fff;
+}
+.submenu_girl.submenu-bacground {
+  background: url(../images/menu/girl.png) no-repeat 96px bottom #fff;
+}
+.submenu_baby.submenu-bacground {
+  background: url(../images/menu/baby.png) no-repeat 135px bottom #fff;
+}
+.submenu_accessories.submenu-bacground {
+  background: url(../images/menu/accessories.png) no-repeat right 205px #fff;
 }
 
-.submenu-bacground {
-  background: url(../images/menu/dd87fe32061262de0d0cfc684a2523c0.png) no-repeat 141px bottom #fff;
+/* Menu Col */
+.submenu .submenu-col {
+  margin: 0px 10px 0px 0px;
+  display: inline-block !important;
+  vertical-align: top;
+  min-width: 200px;
+}
+.submenu .submenu-col:last-child {
+  margin-right: 1px; 
 }
 
 /*===== Back To Top =====*/
