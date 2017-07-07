@@ -45,6 +45,13 @@
     $(this).removeClass('open');
   });
 
+  // Accordion has icon arrow
+  $(document).on('click','.box-accordion > .accordion-header',function(event){
+    $(this).toggleClass('active');
+    $(this).toggleClass('opened');
+    $(this).next('.box-collapse').slideToggle(200);
+  });
+
   /*  [ Sticky Menu ] */
   // $('.fixed-header').sticky({ topSpacing: 0 });
 

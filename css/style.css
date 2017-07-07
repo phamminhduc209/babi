@@ -125,12 +125,97 @@ img {
 .block {
   margin-bottom: 20px;
   position: relative;
+  display: block;
 }
-.block_breadcrumb {
-  
+.block_breadcrumb .breadcrumb {
+  background: transparent;
+  margin-bottom: 5px;
+  padding: 0;
+}
+.block_breadcrumb .breadcrumb li.active {
+  color: #888;
+}
+.block_breadcrumb .breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #465363;
+  content: "/\00a0";
+}
+.block_title_page {
+  color: #08c;
+  border-bottom: 1px solid #edf2f5;
+  padding-bottom: 5px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.block_pagination .pagination li {
+  display: inline-block;
+}
+.block_pagination .pagination>li>a,
+.block_pagination .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #7a9fb5;
+  text-decoration: none;
+  background-color: #fff;
+  border: none;
+}
+.block_pagination .pagination>.active>a,
+.block_pagination .pagination>.active>a:focus,
+.block_pagination .pagination>.active>a:hover,
+.block_pagination .pagination>.active>span,
+.block_pagination .pagination>.active>span:focus,
+.block_pagination .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #d60c0c;
+  border-color: #d60c0c;
+}
+.block_pagination .pagination a:hover,
+.block_pagination .pagination span:hover {
+  color: #d60c0c;
+}
+
+/* Accordion */
+.block_head {
+  position: relative;
+  margin-bottom: 7px;
+}
+.block_head .box-title {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #f3f5f7;
+}
+.box-accordion, .box-accordion .accordion-header {
+  position: relative;
+}
+.box-accordion .accordion-header .btn-opened:before {
+  content: "\f078";
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  font-size: 12px;
+}
+.box-accordion .accordion-header.opened .btn-opened:before {
+  content: "\f077";
+}
+.box-accordion.on > .box-collapse, .box-accordion .box-collapse {
+  display: none;
+}
+.box-accordion.in > .box-collapse {
+  display: block;
 }
 
 /*===== Header =====*/
+.header  {
+  background: #fff;
+}
 .header-top {
   position: relative;
 }
@@ -384,12 +469,12 @@ img {
 /*===== Main =====*/
 .main {
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 /* Block Product */
 .block_product .block_title {
   border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .block_product .block_title h2 {
   text-transform: uppercase;
@@ -447,9 +532,6 @@ img {
   -o-transition: box-shadow 0.4s;
   transition: box-shadow 0.4s;
   margin-bottom: 35px;
-}
-.product_list .row:last-child .product_item {
-  margin-bottom: 0; 
 }
 .product_list .product_item .product_img {
   border: none;
@@ -610,6 +692,69 @@ img {
 }
 
 /*===== Product =====*/
+.block_page_product .bloc_description_top {
+  font-size: 16px;
+}
+.block_description_bottom {
+  line-height: 22px;
+  font-size: 13px;
+  text-align: justify;
+}
+.block_description_bottom p {
+  margin: 0;
+  padding: 6px 0;
+}
+.block_tags ul li {
+  display: inline-block;
+  margin: 5px 20px 5px 0px;
+}
+.block_tags ul li a {
+  color: #e2055b;
+}
+
+/*===== SideBar =====*/
+.block_sidebar {
+  background-color: #fff;
+  border: 1px solid #e5edec;
+}
+.block_sidebar .block_title {
+  background: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #edf2f5;
+}
+.block_sidebar .block_category .block_title {
+  background: #9acd14;
+  color: #fff;
+}
+.category_menu li {
+  border-bottom: 1px dotted #d6d6d6;
+  padding: 8px 15px;
+}
+.category_menu li h2 a {
+  display: block;
+}
+.category_menu li:hover {
+  background: #f1f1f1;
+}
+.block_tools .block_content {
+  padding: 10px;
+}
+.block_size .box-collapse ul.non_selected li {
+  display: inline-block;
+  border-radius: 1px;
+  border: 1px solid #333;
+  padding: 2px 6px;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+.block_size .box-collapse ul.selected li {
+  padding: 0px 4px;
+  display: inline-block;
+  border-radius: 1px;
+  border: 3px solid #333;
+  margin: 5px 3px;
+  cursor: pointer;
+}
 
 /*===== Back To Top =====*/
 .td-scroll-up {
