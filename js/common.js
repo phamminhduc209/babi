@@ -52,7 +52,10 @@
     $(this).next('.box-collapse').slideToggle(200);
   });
 
-  /*  [ Sticky Menu ] */
-  // $('.fixed-header').sticky({ topSpacing: 0 });
+  // Focus Input Search Show Suggestion
+  // $('.search_input').focus(function() {
+  //   $(this).toggleClass('focused').
+  //   $('.quick-search-result').addClass('open');
+  // });
 
 })(jQuery); // End of use strict
